@@ -1,4 +1,5 @@
 from cx_Freeze import setup, Executable
+# python setup.py build
 
 setup(
     name = "max PC",
