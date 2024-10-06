@@ -61,6 +61,7 @@ def moving_body_snake():
  
 root = Tk()
 root.geometry('600x500')
+root.resizable(width=False, height=False) 
 
  
 
