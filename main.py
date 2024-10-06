@@ -22,7 +22,9 @@ bool_snake = True
 check_num_snake = 0
 
 def fun_audio():
-    AudioPlayer("8d3b1fa30e92ead.mp3").play(block=True)
+    AudioPlayer("audio_2.mp3").play(block=True)
+def fun_audio_start():
+    AudioPlayer("audio_1.mp3").play(block=True)
 
 
 
@@ -65,6 +67,8 @@ root.geometry('600x500')
 
 
 def fun_start():
+    thread_fun = threading.Thread(target=fun_audio_start)
+    thread_fun.start()
     bool_snake = True
     global start
     global applePositionY
